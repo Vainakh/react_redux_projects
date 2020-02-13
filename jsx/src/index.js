@@ -8,12 +8,21 @@ import ReactDOM from 'react-dom';
 //     return <div>Hi There!</div>;
 // }; ===> function based component
 
+function getButtonText() {
+    return 'Click on me!';
+}
+
 const App = () => {
+
     return (
         <div>
-            <label className="label" htmlFor="name" > Enter Name: </label>
+            <label className="label" htmlFor="name" > 
+            Enter Name: 
+            </label>
             <input id="name" type="text" />
-            <button style={{ backgroundColor: 'blue', color: 'white' }}>Submit</button>
+            <button style={{ backgroundColor: 'blue', color: 'white' }}>
+            {getButtonText()}
+            </button>
         </div>
     );
 };
