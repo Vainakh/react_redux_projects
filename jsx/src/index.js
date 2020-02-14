@@ -8,20 +8,21 @@ import ReactDOM from 'react-dom';
 //     return <div>Hi There!</div>;
 // }; ===> function based component
 
-function getButtonText() {
-    return 'Click on me!';
-}
+
 
 const App = () => {
+
+    const buttonText = { text: 'Click me!'};
+    const labelText = 'Enter name:';
 
     return (
         <div>
             <label className="label" htmlFor="name" > 
-            Enter Name: 
+            { labelText } 
             </label>
             <input id="name" type="text" />
             <button style={{ backgroundColor: 'blue', color: 'white' }}>
-            {getButtonText()}
+            {buttonText.text}
             </button>
         </div>
     );
