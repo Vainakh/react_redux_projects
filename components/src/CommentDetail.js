@@ -19,7 +19,7 @@ const CommentDetail = props => {
                 <div className="text">{props.commentText}</div>
             </div>
         </div>
-    )
+    );
 };
 
 export default CommentDetail;
